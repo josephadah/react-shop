@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { imageBaseUrl } from "../../utils/constants";
 
 class Product extends Component {
   state = {};
@@ -8,7 +9,7 @@ class Product extends Component {
       <div>
         <div className="card">
           <img
-            src="https://picsum.photos/200"
+            src={imageBaseUrl + product.thumbnail}
             className="card-img-top"
             alt=""
           />
